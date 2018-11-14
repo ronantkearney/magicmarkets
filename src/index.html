@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Magic Markets</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="manifest" href="webmanifest.json">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+
+<body>
+  <main>
+    <header>
+      <h2>Magic Markets</h2>
+      <section>
+      <total-view></total-view>
+    </section>
+    </header>
+    <nav>
+      <mm-nav activeLinkClass="a-link">
+        <a href="#Dashboard">Dashboard</a>
+        <a href="#Products">Products & Services</a>
+        <a href="#Messaging">Messaging</a>
+        <a href="#News">News</a>
+        <a href="#Events">Events</a>
+        <a href="#Hiring">Hiring Activity</a>
+        <a href="#Hype">Hype Chart</a>
+      </mm-nav>
+    </nav>
+    <article>
+      <mm-slot/>
+    </article>
+    <footer>
+      <mm-storage></mm-storage>
+      <small>copyright magicmarkets.io 2018</small>
+    </footer>
+  </main>
+  <script src="d3/d3.js"></script>
+  <script src="app.js" type="module"></script>
+</body>
+
+</html>

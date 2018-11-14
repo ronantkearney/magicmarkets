@@ -1,0 +1,8 @@
+{
+    "name": "magicmarkets",
+    "short_name": "magicmarkets",
+    "start_url": ".",
+    "display": "standalone",
+    "background_color": "#fff",
+    "description": "Magic Markets App"
+  }
