@@ -1,6 +1,6 @@
 # Description
 
-The project is structured seperately frontend and backend.
+The project is structured into frontend and backend.
 
 # Frontend project
 
@@ -50,16 +50,19 @@ The project builds to around 2mb distributable.  d3js and lit-html account for 9
 2. Start Visual Studio Code and open the frontend directory.
 2. Launch browser sync using the provided script (bsync-watch-files.sh).  The script was tested to run on Windows 10. It may be necessary to edit the name of the browser for different OS, eg. "chrome" -> "Google Chrome"
 3. Edit src files
-4. See the result instantly in the browser at http://localhost:3000/
+4. See the results instantly in the browser at http://localhost:3000/
+
+# Manual testing packaged modules
+
+1. Execute rollup script (buildRollup.sh)
+2. Kill browser sync if running.  
+3. Launch browser sync in web server mode using the script (bsync-serve-static.sh)
+4. Browse at http://localhost:3000/
 
 # To deploy to the cloud
 
-1. Run rollup script (buildRollup.sh)
-2. To test generated dist files locally.  Kill browser sync if running.  
-3. Launch browser sync in web server mode using the script (bsync-serve-static.sh)
-4. Browse at http://localhost:3000/
-5. Upload the project to amazon S3 with the script (awsUpload.bat)
-6. Browse at http://magicmarkets.s3-website-eu-west-1.amazonaws.com
+1. Upload the project to amazon S3 with the script (awsUpload.bat)
+2. Browse at http://magicmarkets.s3-website-eu-west-1.amazonaws.com
 
 # Secrets
 
