@@ -1,5 +1,4 @@
 import {html,render } from '../lit-html/lit-html.js';
-import LandingViewData from './LandingViewData.js';
 import MMarketsElement from './MMarketsElement.js';
 export default class LandingView extends MMarketsElement {
 
@@ -35,15 +34,6 @@ export default class LandingView extends MMarketsElement {
                         <th>Product & Services</th><th>News</th><th>Events</th><th>People</th>
                     </tr>
                 </thead>
-                <tbody>
-                    ${LandingViewData.all().map(({ productsandservices, news, events, people }) =>
-                html`
-                    <tr>
-                    <td>${productsandservices}</td><td>${news}</td><td>${events}</td><td>${people}</td>
-                    </tr>
-                `
-                )}
-                </tbody>
             </table>
         `;
     }
