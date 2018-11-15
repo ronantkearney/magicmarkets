@@ -30,6 +30,10 @@ The project builds to around 2mb distributable.  d3js and lit-html account for 9
 
 	npm install cypress
 	
+- git.  Source Code Management
+
+	https://git-scm.com/
+	
 # Required software for automated deployment to aws
 
 - rollup.js
@@ -40,4 +44,15 @@ The project builds to around 2mb distributable.  d3js and lit-html account for 9
 	
 	https://aws.amazon.com/cli/
 
-	
+# Local development guide
+
+1. Optional step.  Create a git branch.  git checkout -b my-junk-branch
+2. Start Visual Studio Code and open the frontend directory.
+2. Launch browser sync using the provided script (bsync-watch-files.sh).  The script was tested to run on Windows 10. It may be necessary to edit the name of the browser for different OS, eg. "chrome" -> "Google Chrome"
+3. Edit src files and see the result instantly in the browser at http://localhost:3000/
+
+# To deploy to the cloud
+
+1. Run rollup script (buildRollup.sh)
+2. To verify generated dist files.  Kill browser sync if running.  
+3. Start browser sync in web server mode using the script (bsync-serve-static.sh) and browse at http://localhost:3000/
