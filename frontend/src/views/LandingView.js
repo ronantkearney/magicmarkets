@@ -26,7 +26,7 @@ export default class LandingView extends MMarketsElement {
          }
         </style>
             <header>
-            <h2>the stocks</h2>
+            <h2>HCM Market</h2>
             </header>
             <table>
                 <thead>

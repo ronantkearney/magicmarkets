@@ -48,15 +48,15 @@ The project builds to around 2mb distributable.  d3js and lit-html account for 9
 
 1. Optional step.  Create a git branch.  git checkout -b my-junk-branch
 2. Start Visual Studio Code and open the frontend directory.
-2. Launch browser sync using the provided script (bsync-watch-files.sh).  The script was tested to run on Windows 10. It may be necessary to edit the name of the browser for different OS, eg. "chrome" -> "Google Chrome"
+2. Launch browser sync using the script (bsync-watch.sh).  The script was tested on Windows 10. Edit browser name if error, eg. "chrome" -> "Google Chrome"
 3. Edit src files
-4. See the results instantly in the browser at http://localhost:3000/
+4. Results instantly in the browser at http://localhost:3000/
 
 # Manual testing packaged modules
 
 1. Execute rollup script (buildRollup.sh)
 2. Kill browser sync if running.  
-3. Launch browser sync in web server mode using the script (bsync-serve-static.sh)
+3. Launch browser sync in web server mode using the script (bsync-serve.sh)
 4. Browse at http://localhost:3000/
 
 # To deploy to the cloud
@@ -71,12 +71,12 @@ Credentials are needed for:
 - Pushing changes to this repo in github
 - Uploading files to S3.  AWS cli on windows uses a credentials file at (%UserProfile%\.aws)  See: https://docs.aws.amazon.com/cli/latest/userguide/cli-config-files.html
 
-# Install natively
+# Native OS install
 
-1. In chrome go to url: chrome://flags/
+1. chrome://flags/
 2. Type search term: "banner"
 3. Enable all drop downs
 4. Relaunch the browser
 5. Browse at http://localhost:3000/
 6. Open chrome menu dropdown -> "Install magicmarkets"
-7. New icon appears on the desktop
+7. New icon on the desktop
