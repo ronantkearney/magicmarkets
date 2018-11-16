@@ -4,5 +4,10 @@
     "start_url": ".",
     "display": "standalone",
     "background_color": "#fff",
-    "description": "Magic Markets App"
+    "description": "Magic Markets App",
+    "icons": [{
+      "src": "images/logo144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    }]    
   }

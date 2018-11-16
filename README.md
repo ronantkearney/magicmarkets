@@ -14,7 +14,7 @@ The project builds to around 2mb distributable.  d3js and lit-html account for 9
 	
 # Recommended software for local development
 
-- npm 
+- npm.  JavaScript package manager
 
 	https://www.npmjs.com
 	
@@ -70,3 +70,13 @@ Credentials are needed for:
 
 - Pushing changes to this repo in github
 - Uploading files to S3.  AWS cli on windows uses a credentials file at (%UserProfile%\.aws)  See: https://docs.aws.amazon.com/cli/latest/userguide/cli-config-files.html
+
+# Install natively
+
+1. In chrome go to url: chrome://flags/
+2. Type search term: "banner"
+3. Enable all drop downs
+4. Relaunch the browser
+5. Browse at http://localhost:3000/
+6. Open chrome menu dropdown -> "Install magicmarkets"
+7. New icon appears on the desktop
