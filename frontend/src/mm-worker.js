@@ -1,5 +1,5 @@
 
-const cacheName = 'mm-cache-v0.0.5';
+const cacheName = 'mm-cache-v0.0.1';
 const resources = ['index.html','style.css','app.js','d3/d3.js'];
 
 const prefetch = (name) => caches.open(name).then(cache => cache.addAll(resources));

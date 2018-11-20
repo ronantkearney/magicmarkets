@@ -40,22 +40,7 @@ export default class MMarketsSlot extends HTMLElement{
                 newChild = new LandingView();
                 break;
             case 'Products':
-                newChild = new ProductsServicesView();
-                break;
-            case 'Messaging':
-                newChild = new MessagingView();
-                break;
-            case 'News':
-                newChild = new NewsView();
-                break;
-            case 'Events':
-                newChild = new EventsView();
-                break;
-            case 'Hiring':
-                newChild = new HiringView();
-                break;
-            case 'Hype':
-                newChild = new HypeView();
+                newChild = new LandingView();
                 break;
             default:
                 throw new Error(`Unknown route: ${linkName}`);

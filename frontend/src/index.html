@@ -20,18 +20,16 @@
       <mm-nav activeLinkClass="a-link">
         <a href="#Dashboard">Dashboard</a>
         <a href="#Products">Products & Services</a>
-        <a href="#Messaging">Messaging</a>
-        <a href="#News">News</a>
-        <a href="#Events">Events</a>
-        <a href="#Hiring">Hiring Activity</a>
-        <a href="#Hype">Hype Chart</a>
       </mm-nav>
     </nav>
     <article>
-      <mm-slot/>
+      <mm-slot>
+            <header slot="header">the header</header>
+	        <header slot="view">the view</header>
+      		<footer slot="footer">the footer</footer>
+      </mm-slot>
     </article>
     <footer>
-      <mm-storage></mm-storage>
       <small>copyright magicmarkets.io 2018</small>
     </footer>
   </main>
