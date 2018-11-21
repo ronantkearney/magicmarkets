@@ -1,12 +1,12 @@
 [{
-		"org": "first seems to work on server",
+		"org": "Oracle",
 		"product": "1 high",
 		"news": "1 years",
 		"event": "big event",
 		"people": "some people"
 	},
 	{
-		"org": "second org",
+		"org": "Google",
 		"product": "2 high",
 		"news": "2 years",
 		"event": "2 big events",

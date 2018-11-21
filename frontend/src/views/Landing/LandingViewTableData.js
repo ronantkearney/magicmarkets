@@ -28,8 +28,6 @@ export default class LandingViewTableData {
 
     static all() {
         const all = { ...localStorage };
-        console.log("in the all");
-        console.log(Object.keys(all));
         return Object.keys(all).
             filter(key => key.startsWith('landingViewTableData.')).
             map(key => LandingViewTableData.getWithoutPrefix(key));

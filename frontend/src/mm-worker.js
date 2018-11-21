@@ -12,7 +12,6 @@ self.addEventListener('install', event => {
 
 self.addEventListener('fetch', event => {
     const { request } = event;
-    console.log('onfetch ', request);
     event.respondWith(caches.match(request).
         then(response => (response || fetch(request))))
 });

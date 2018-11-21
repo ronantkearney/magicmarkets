@@ -1,0 +1,17 @@
+[{
+		"org": "Oracle",
+		"date": "2018-04-23",
+		"type": "New",
+		"title": "Oracle Appointment Analytics",
+		"summary": "Oracle Appointment Analytics Summary",
+		"details": "Link"
+	},
+	{
+		"org": "Google",
+		"date": "2018-05-10",
+		"type": "New",
+		"title": "Google Appointment Analytics",
+		"summary": "Google Appointment Analytics Summary",
+		"details": "Link"
+	}
+]

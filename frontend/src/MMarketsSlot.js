@@ -1,5 +1,3 @@
-import LandingView from './views/LandingView.js';
-
 export default class MMarketsSlot extends HTMLElement{ 
 
     constructor(){ 
@@ -29,30 +27,20 @@ export default class MMarketsSlot extends HTMLElement{
     onNavigation(evt) { 
         const { detail } = evt;
         const { hash: linkName } = detail;
-        this.currentView = linkName;
         this.loadView(linkName);
     }
     
     async loadView(linkName) { 
-        let newChild;
-        switch (linkName) { 
-            case 'Dashboard':
-                newChild = new LandingView();
-                break;
-            case 'Products':
-                newChild = new LandingView();
-                break;
-            default:
-                throw new Error(`Unknown route: ${linkName}`);
+        const { default: View } = await import (`./views/${linkName}/${linkName}View.js`)
+        const newChild = new View();
+        if (this.oldChild) {
+            this.root.replaceChild(newChild, this.oldChild);
+        } else { 
+            this.root.appendChild(newChild);
         }
-
-            if (this.oldChild) {
-                this.root.replaceChild(newChild, this.oldChild);
-            } else { 
-                this.root.appendChild(newChild);
-            }
     
         this.oldChild = newChild;
+        this.oldChild.loadViewData();
     }
 
 }
